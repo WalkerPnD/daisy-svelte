@@ -1,2 +1,2 @@
-import Button from './actions/button/Button.svelte';
-export { Button };
+export * as Button from './actions/button/Button.svelte';
+// export { Button };
