@@ -3,6 +3,7 @@
     "type": "module",
     "version": "0.0.4",
     "scripts": {
+        "publish:patch": "npm version patch && npm run publish:package",
         "publish:package": "npm run package && ( cd package && npm publish)",
         "build": "svelte-kit build",
         "build-storybook": "build-storybook",

@@ -1,1 +1,2 @@
-export * as Button from './actions/button/Button.svelte';
+import { defalt as Button } from './actions/button/Button.svelte';
+export { Button };
