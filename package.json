@@ -1,7 +1,7 @@
 {
     "name": "daisy-svelte",
     "type": "module",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "scripts": {
         "publish:package": "npm run package && ( cd package && npm publish)",
         "build": "svelte-kit build",
