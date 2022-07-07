@@ -1,3 +1,5 @@
+import Preview from './preview.svelte';
+
 export const parameters = {
 	actions: { argTypesRegex: '^on[A-Z].*' },
 	controls: {
@@ -7,3 +9,5 @@ export const parameters = {
 		},
 	},
 };
+
+export const decorators = [() => Preview];
