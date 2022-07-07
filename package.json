@@ -24,7 +24,11 @@
     "author": {
         "email": "~TODO~",
         "name": "~TODO~",
-        "url": "~TODO~"
+        "url": "https://walker-walks.github.io/daisy-svelte/?path=/story/example-introduction--page"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/walker-walks/daisy-svelte.git"
     },
     "devDependencies": {
         "@babel/core": "7.18.6",
