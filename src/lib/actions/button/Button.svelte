@@ -18,6 +18,7 @@
 	export let isLoading = false;
 	export let glass = false;
 	export let noAnimation = false;
+	export let ghost = false;
 	export let wide = false;
 	export let block = false;
 	export let circle = false;
@@ -31,6 +32,7 @@
 	{...$$restProps}
 	class={classes}
 	class:btn-active={active}
+	class:btn-ghost={ghost}
 	class:glass
 	class:loading={isLoading}
 	class:no-animation={noAnimation}

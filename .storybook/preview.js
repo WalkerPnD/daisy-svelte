@@ -12,14 +12,11 @@ export const parameters = {
 };
 addParameters({
 	viewMode: 'docs',
-	docs: { showCode: true },
-});
-addParameters({
-	docs: {
-		source: {
-			state: 'open',
-		},
-	},
+	// docs: {
+	// 	source: {
+	// 		state: 'open',
+	// 	},
+	// },
 });
 
 export const decorators = [() => Preview];
