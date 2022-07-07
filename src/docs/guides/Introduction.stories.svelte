@@ -38,7 +38,10 @@
 						>
 					</article>
 				</div>
-				<button class="btn btn-primary">Get Started(WIP)</button>
+				<a
+					href="https://github.com/walker-walks/daisy-svelte"
+					class="btn btn-primary">Code at Github</a
+				>
 			</div>
 		</div>
 	</div>

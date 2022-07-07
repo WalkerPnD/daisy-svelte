@@ -26,6 +26,8 @@
         "name": "Marcio Koji Carvalho",
         "url": "https://walker-walks.github.io/daisy-svelte/"
     },
+    "homepage": "https://walker-walks.github.io/daisy-svelte/",
+    "license": "MIT",
     "repository": {
         "type": "git",
         "url": "https://github.com/walker-walks/daisy-svelte.git"
@@ -75,8 +77,6 @@
         "tslib": "2.4.0",
         "typescript": "4.7.4"
     },
-    "homepage": "~TODO~",
-    "license": "~TODO~",
     "lint-staged": {
         "*.{js, ts, svelte}": [
             "eslint --fix"
