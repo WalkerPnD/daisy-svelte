@@ -22,7 +22,7 @@
 	export let block = false;
 	export let circle = false;
 	export let square = false;
-	export let text;
+	export let label;
 
 	$: classes = bindClasses([prefix, op(color), op(size), className]);
 </script>
@@ -42,6 +42,6 @@
 	on:change
 >
 	<slot>
-		{text}
+		{label}
 	</slot>
 </button>

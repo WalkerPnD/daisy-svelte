@@ -1,12 +1,12 @@
 <script>
 	import { Meta, Template, Story } from '@storybook/addon-svelte-csf';
-	import Button from './Button.svelte';
+	import Dropdown from './Dropdown.svelte';
 </script>
 
 <!-- 👇 Creates specific parameters for the story -->
 <Meta
-	title="Actions/Button"
-	component={Button}
+	title="Actions/Dropdown"
+	component={Dropdown}
 	argTypes={{
 		label: { control: 'text' },
 		textColor: { control: 'color' },
@@ -14,21 +14,20 @@
 />
 
 <Template let:args>
-	<Button {...args} />
+	<Dropdown {...args} />
 </Template>
 
-<Story
-	name="Jane"
-	args={{
-		label: 'Jane',
-		textColor: 'rgb(173, 216, 230)',
-	}}
-/>
+<Story name="Dropdown menu">
+	<Dropdown label="Click">
+		<li><a>Item 1</a></li>
+		<li><a>Item 2</a></li>
+	</Dropdown>
+</Story>
 
 <Story
 	name="John"
 	args={{
-		label: 'John',
+		text: 'John',
 		textColor: 'rgb(71, 134, 155)',
 	}}
 />
@@ -36,7 +35,7 @@
 <Story
 	name="Jina"
 	args={{
-		label: 'Jina',
+		text: 'Jina',
 		textColor: 'rgb(169, 169, 169)',
 	}}
 />
