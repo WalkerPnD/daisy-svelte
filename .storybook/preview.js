@@ -1,3 +1,4 @@
+import { addParameters } from '@storybook/client-api';
 import Preview from './preview.svelte';
 
 export const parameters = {
@@ -9,5 +10,16 @@ export const parameters = {
 		},
 	},
 };
+addParameters({
+	viewMode: 'docs',
+	docs: { showCode: true },
+});
+addParameters({
+	docs: {
+		source: {
+			state: 'open',
+		},
+	},
+});
 
 export const decorators = [() => Preview];
