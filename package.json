@@ -22,13 +22,13 @@
         "test": "start-server-and-test storybook http://localhost:6006 cy:run"
     },
     "author": {
-        "email": "~TODO~",
-        "name": "~TODO~",
+        "email": "stylethewalker@gmail.com",
+        "name": "Marcio Koji Carvalho",
         "url": "https://walker-walks.github.io/daisy-svelte/?path=/story/example-introduction--page"
     },
     "repository": {
         "type": "git",
-        "url": "~TODO~"
+        "url": "https://github.com/walker-walks/daisy-svelte.git"
     },
     "devDependencies": {
         "@babel/core": "7.18.6",
