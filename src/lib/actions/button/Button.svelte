@@ -42,6 +42,6 @@
 	on:change
 >
 	<slot>
-		{label}
+		{label || 'Button'}
 	</slot>
 </button>

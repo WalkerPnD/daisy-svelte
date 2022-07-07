@@ -24,19 +24,3 @@
 		textColor: 'rgb(173, 216, 230)',
 	}}
 />
-
-<Story
-	name="John"
-	args={{
-		label: 'John',
-		textColor: 'rgb(71, 134, 155)',
-	}}
-/>
-
-<Story
-	name="Jina"
-	args={{
-		label: 'Jina',
-		textColor: 'rgb(169, 169, 169)',
-	}}
-/>
