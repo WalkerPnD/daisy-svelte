@@ -1,6 +1,7 @@
 // actions
 export * as Button from './actions/button/Button.svelte';
 export * as Dropdown from './actions/dropdown/Dropdown.svelte';
+export * as Modal from './actions/modal/Modal.svelte';
 
 // navigation
 export * as Breadcrumbs from './navigation/breadcrumbs/Breadcrumbs.svelte';
