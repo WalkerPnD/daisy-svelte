@@ -6,7 +6,7 @@
 	let className = '';
 	export { className as class };
 	/**
-	 * @type {import('../../params/horizontal-align.const.const').HorizontalAlign}
+	 * @type {import('../../params/horizontal-align.const').HorizontalAlign}
 	 */
 	export let hAlign;
 

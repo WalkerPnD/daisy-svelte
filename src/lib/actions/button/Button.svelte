@@ -1,8 +1,13 @@
 <script>
+	// @ts-check
 	import { bindClasses } from '../../utils/bind-classes';
-	import { optionalClass as op } from '../../utils/optional-class';
+	import { createSwitchClass } from '../..//utils/switch-class';
+	import { createOptionalClass } from '../../utils/optional-class';
 
 	const prefix = 'btn';
+	const op = createOptionalClass(prefix);
+	const psw = createSwitchClass(prefix);
+	const sw = createSwitchClass();
 	let className = '';
 	export { className as class };
 
@@ -14,7 +19,6 @@
 	 * @type {import('../../params/size.const').Size}
 	 */
 	export let size;
-	export let active = false;
 	export let isLoading = false;
 	export let glass = false;
 	export let noAnimation = false;
@@ -25,24 +29,23 @@
 	export let square = false;
 	export let label;
 
-	$: classes = bindClasses([prefix, op(color), op(size), className]);
+	$: classes = bindClasses([
+		prefix,
+		className,
+		op(color),
+		op(size),
+		sw(glass, 'glass'),
+		sw(isLoading, 'loading'),
+		sw(noAnimation, 'no-animation'),
+		psw(ghost, 'ghost'),
+		psw(wide, 'wide'),
+		psw(block, 'block'),
+		psw(circle, 'circle'),
+		psw(square, 'square'),
+	]);
 </script>
 
-<button
-	{...$$restProps}
-	class={classes}
-	class:btn-active={active}
-	class:btn-ghost={ghost}
-	class:glass
-	class:loading={isLoading}
-	class:no-animation={noAnimation}
-	class:btn-block={block}
-	class:btn-circle={circle}
-	class:btn-wide={wide}
-	class:btn-square={square}
-	on:click
-	on:change
->
+<button {...$$restProps} class={classes} on:click on:change>
 	<slot>
 		{label || 'Button'}
 	</slot>

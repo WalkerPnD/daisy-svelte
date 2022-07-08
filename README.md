@@ -75,7 +75,7 @@ Navigation
 
 -   [/] Breadcrumbs
 -   [ ] Bottom navigation
--   [ ] Link
+-   [x] Link
 -   [ ] Menu
 -   [/] Navbar
 -   [ ] Indicator

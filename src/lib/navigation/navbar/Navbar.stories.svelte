@@ -2,6 +2,7 @@
 	import Button from '../../actions/button/Button.svelte';
 	import { Meta, Template, Story } from '@storybook/addon-svelte-csf';
 	import Navbar from './Navbar.svelte';
+	import Link from '../link/Link.svelte';
 </script>
 
 <!-- 👇 Creates specific parameters for the story -->
@@ -22,14 +23,14 @@
 
 <Story name="Navbar with title only">
 	<Navbar class="bg-base-100">
-		<a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+		<Link prefix="btn" ghost class="normal-case text-xl">daisyUI</Link>
 	</Navbar>
 </Story>
 
 <Story name="Navbar with title and icon">
 	<Navbar class="bg-base-100">
 		<div class="flex-1">
-			<a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+			<Link prefix="btn" ghost class="normal-case text-xl">daisyUI</Link>
 		</div>
 		<div class="flex-none">
 			<Button square ghost>
@@ -49,7 +50,7 @@
 			</Button>
 		</div>
 		<div class="flex-1">
-			<a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+			<Link prefix="btn" ghost class="normal-case text-xl">daisyUI</Link>
 		</div>
 		<div class="flex-none">
 			<Button square ghost>
@@ -63,23 +64,23 @@
 <Story name="Navbar with menu and submenu">
 	<Navbar class="bg-base-100">
 		<div class="flex-1">
-			<a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+			<Link prefix="btn" ghost class="normal-case text-xl">daisyUI</Link>
 		</div>
 		<div class="flex-none">
 			<ul class="menu menu-horizontal p-0">
-				<li><a>Item 1</a></li>
+				<li><Link>Item 1</Link></li>
 				<li tabindex="0">
-					<a>
+					<Link>
 						Parent
 						<!-- prettier-ignore -->
 						<svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
-					</a>
+					</Link>
 					<ul class="p-2 bg-base-100">
-						<li><a>Submenu 1</a></li>
-						<li><a>Submenu 2</a></li>
+						<li><Link>Submenu 1</Link></li>
+						<li><Link>Submenu 2</Link></li>
 					</ul>
 				</li>
-				<li><a>Item 3</a></li>
+				<li><Link>Item 3</Link></li>
 			</ul>
 		</div>
 	</Navbar>
@@ -88,7 +89,7 @@
 <Story name="Navbar with search input and dropdown">
 	<Navbar class="bg-base-100">
 		<div class="flex-1">
-			<a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+			<Link prefix="btn" ghost class="normal-case text-xl">daisyUI</Link>
 		</div>
 		<div class="flex-none gap-2">
 			<div class="form-control">
@@ -109,13 +110,13 @@
 					class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52"
 				>
 					<li>
-						<a class="justify-between">
+						<Link class="justify-between">
 							Profile
 							<span class="badge">New</span>
-						</a>
+						</Link>
 					</li>
-					<li><a>Settings</a></li>
-					<li><a>Logout</a></li>
+					<li><Link>Settings</Link></li>
+					<li><Link>Logout</Link></li>
 				</ul>
 			</div>
 		</div>
@@ -125,7 +126,7 @@
 <Story name="Navbar with icon, indicator and dropdown">
 	<Navbar class="bg-base-100">
 		<div class="flex-1">
-			<a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+			<Link prefix="btn" ghost class="normal-case text-xl">daisyUI</Link>
 		</div>
 		<div class="flex-none">
 			<div class="dropdown dropdown-end">
@@ -156,13 +157,13 @@
 				<!-- prettier-ignore -->
 				<ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
 					<li>
-						<a class="justify-between">
+						<Link class="justify-between">
 							Profile
 							<span class="badge">New</span>
-						</a>
+						</Link>
 					</li>
-					<li><a>Settings</a></li>
-					<li><a>Logout</a></li>
+					<li><Link>Settings</Link></li>
+					<li><Link>Logout</Link></li>
 				</ul>
 			</div>
 		</div>
@@ -192,14 +193,14 @@
 					tabindex="0"
 					class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
 				>
-					<li><a>Homepage</a></li>
-					<li><a>Portfolio</a></li>
-					<li><a>About</a></li>
+					<li><Link>Homepage</Link></li>
+					<li><Link>Portfolio</Link></li>
+					<li><Link>About</Link></li>
 				</ul>
 			</div>
 		</div>
 		<div class="navbar-center">
-			<a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+			<Link prefix="btn" ghost class="normal-case text-xl">daisyUI</Link>
 		</div>
 		<div class="navbar-end">
 			<button class="btn btn-ghost btn-circle">
@@ -262,9 +263,9 @@
 					tabindex="0"
 					class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
 				>
-					<li><a>Item 1</a></li>
+					<li><Link>Item 1</Link></li>
 					<li tabindex="0">
-						<a class="justify-between">
+						<Link class="justify-between">
 							Parent
 							<svg
 								class="fill-current"
@@ -276,22 +277,22 @@
 									d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"
 								/></svg
 							>
-						</a>
+						</Link>
 						<ul class="p-2">
-							<li><a>Submenu 1</a></li>
-							<li><a>Submenu 2</a></li>
+							<li><Link>Submenu 1</Link></li>
+							<li><Link>Submenu 2</Link></li>
 						</ul>
 					</li>
-					<li><a>Item 3</a></li>
+					<li><Link>Item 3</Link></li>
 				</ul>
 			</div>
-			<a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+			<Link prefix="btn" ghost class="normal-case text-xl">daisyUI</Link>
 		</div>
 		<div class="navbar-center hidden lg:flex">
 			<ul class="menu menu-horizontal p-0">
-				<li><a>Item 1</a></li>
+				<li><Link>Item 1</Link></li>
 				<li tabindex="0">
-					<a>
+					<Link>
 						Parent
 						<svg
 							class="fill-current"
@@ -303,29 +304,29 @@
 								d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
 							/></svg
 						>
-					</a>
+					</Link>
 					<ul class="p-2">
-						<li><a>Submenu 1</a></li>
-						<li><a>Submenu 2</a></li>
+						<li><Link>Submenu 1</Link></li>
+						<li><Link>Submenu 2</Link></li>
 					</ul>
 				</li>
-				<li><a>Item 3</a></li>
+				<li><Link>Item 3</Link></li>
 			</ul>
 		</div>
 		<div class="navbar-end">
-			<a class="btn">Get started</a>
+			<Link prefix="btn">Get started</Link>
 		</div>
 	</Navbar>
 </Story>
 
 <Story name="Navbar with colors">
 	<Navbar class="bg-neutral text-neutral-content">
-		<a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+		<Link prefix="btn" ghost class="normal-case text-xl" label="daisyUI" />
 	</Navbar>
 	<Navbar class="bg-base-300">
-		<a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+		<Link prefix="btn" ghost class="normal-case text-xl" label="daisyUI" />
 	</Navbar>
 	<Navbar class="bg-primary text-primary-conte">
-		<a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+		<Link prefix="btn" ghost class="normal-case text-xl" label="daisyUI" />
 	</Navbar>
 </Story>
