@@ -23,13 +23,13 @@ npm i daisy-svelte
 
 [ ] todo
 [x] done
-[>] beta
+[\] beta
 
 Actions
 
 -   [x] Button
--   [>] Dropdown
--   [>] Modal
+-   [\] Dropdown
+-   [\] Modal
 -   [ ] Swap
 
 Datas display
@@ -73,11 +73,11 @@ Layout
 
 Navigation
 
--   [>] Breadcrumbs
+-   [\] Breadcrumbs
 -   [ ] Bottom navigation
 -   [ ] Link
 -   [ ] Menu
--   [>] Navbar
+-   [\] Navbar
 -   [ ] Indicator
 -   [ ] Pagination
 -   [ ] Steps
