@@ -6,13 +6,31 @@ Demos and examples -> [DaisySvelte - Storybook](https://walker-walks.github.io/d
 
 ## Getting started
 
-You need to setup Daisy UI in your project to use these components.
-See the the examples for svelte, sveltekit and svelte with
-roll-up in the link below.  
-\*[[Official] Install daisyUI as a Tailwind CSS plugin](https://daisyui.com/docs/install/)
+Currently only support using with CDN version.
+Sveltekit: Add those tags below to your `app.html`
+
+```html
+<link
+	href="https://cdn.jsdelivr.net/npm/daisyui@2.18.1/dist/full.css"
+	rel="stylesheet"
+	type="text/css"
+/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+```
 
 ```terminal
 npm i daisy-svelte
+```
+
+```svelte
+<script lang="ts">
+  import { Navbar, Button } from 'daisy-svelte';
+
+</script>
+<Nabvar>
+  <Button label="DaisySvelte" />
+  ...
 ```
 
 ## References:
