@@ -53,7 +53,7 @@ Actions
 Datas display
 
 -   [ ] Alert
--   [ ] Avatar
+-   [/] Avatar
 -   [ ] Badge
 -   [ ] Card
 -   [ ] Carousel
