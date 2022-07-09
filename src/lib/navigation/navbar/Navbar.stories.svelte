@@ -172,7 +172,7 @@
 
 <Story name="Navbar with dropdown, center logo and icon">
 	<Navbar class="bg-base-100">
-		<div class="navbar-start">
+		<Navbar start>
 			<div class="dropdown">
 				<label tabindex="0" class="btn btn-ghost btn-circle">
 					<svg
@@ -198,11 +198,11 @@
 					<li><Link>About</Link></li>
 				</ul>
 			</div>
-		</div>
-		<div class="navbar-center">
+		</Navbar>
+		<Navbar center>
 			<Link prefix="btn" ghost class="normal-case text-xl">daisyUI</Link>
-		</div>
-		<div class="navbar-end">
+		</Navbar>
+		<Navbar end>
 			<button class="btn btn-ghost btn-circle">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -236,13 +236,13 @@
 					<span class="badge badge-xs badge-primary indicator-item" />
 				</div>
 			</button>
-		</div>
+		</Navbar>
 	</Navbar>
 </Story>
 <!-- prettier-ignore -->
 <Story name="responsive (dropdown menu on small screen, center menu on large screen)">
 	<Navbar class="bg-base-100">
-		<div class="navbar-start">
+		<Navbar start>
 			<div class="dropdown">
 				<label tabindex="0" class="btn btn-ghost lg:hidden">
 					<svg
@@ -287,8 +287,8 @@
 				</ul>
 			</div>
 			<Link prefix="btn" ghost class="normal-case text-xl">daisyUI</Link>
-		</div>
-		<div class="navbar-center hidden lg:flex">
+		</Navbar>
+		<Navbar center class="hidden lg:flex">
 			<ul class="menu menu-horizontal p-0">
 				<li><Link>Item 1</Link></li>
 				<li tabindex="0">
@@ -312,10 +312,10 @@
 				</li>
 				<li><Link>Item 3</Link></li>
 			</ul>
-		</div>
-		<div class="navbar-end">
+		</Navbar>
+		<Navbar end>
 			<Link prefix="btn">Get started</Link>
-		</div>
+		</Navbar>
 	</Navbar>
 </Story>
 

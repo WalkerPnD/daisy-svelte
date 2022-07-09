@@ -95,7 +95,7 @@ Navigation
 -   [ ] Bottom navigation
 -   [x] Link
 -   [ ] Menu
--   [/] Navbar
+-   [x] Navbar
 -   [ ] Indicator
 -   [ ] Pagination
 -   [ ] Steps
