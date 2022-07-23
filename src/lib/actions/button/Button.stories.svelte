@@ -24,3 +24,8 @@
 		textColor: 'rgb(173, 216, 230)',
 	}}
 />
+
+<Story name="outline">
+	<Button label="Button" outline />
+	<Button label="Button" color="primary" outline />
+</Story>
