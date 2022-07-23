@@ -20,6 +20,7 @@
 	 */
 	export let size;
 	export let isLoading = false;
+	export let outline = false;
 	export let glass = false;
 	export let noAnimation = false;
 	export let ghost = false;
@@ -34,6 +35,7 @@
 		className,
 		op(color),
 		op(size),
+		sw(outline, 'outline'),
 		sw(glass, 'glass'),
 		sw(isLoading, 'loading'),
 		sw(noAnimation, 'no-animation'),
