@@ -83,7 +83,7 @@ Layout
 -   [ ] Button group
 -   [ ] Divider
 -   [ ] Drawer
--   [ ] Hero
+-   [x] Hero
 -   [ ] Indicator
 -   [ ] Input group
 -   [ ] Mask
