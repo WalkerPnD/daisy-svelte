@@ -55,7 +55,7 @@ Datas display
 -   [ ] Alert
 -   [/] Avatar
 -   [ ] Badge
--   [ ] Card
+-   [x] Card
 -   [ ] Carousel
 -   [ ] Collapse
 -   [ ] Countdown
