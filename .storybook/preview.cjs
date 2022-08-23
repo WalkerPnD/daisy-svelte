@@ -10,8 +10,8 @@ export const parameters = {
 		},
 	},
 };
-addParameters({
-	viewMode: 'docs',
-});
+// addParameters({
+// 	viewMode: 'docs',
+// });
 
 export const decorators = [() => Preview];

@@ -1,6 +1,6 @@
 /**
  * Color string values.
- * @enum {String}
+ * @enum {('lg'|'md'|'sm'|'xs')}
  */
 export const Size = {
 	lg: 'lg',

@@ -1,14 +1,13 @@
 /**
  * Color string values.
- * @enum {String}
+ * @enum {('primary'|'secondary'|'success'|'danger'|'warning'|'info'|'light'|'dark')}
  */
 export const Color = {
 	primary: 'primary',
 	secondary: 'secondary',
 	accent: 'accent',
-	neutral: 'neutral',
-	success: 'success',
 	info: 'info',
+	success: 'success',
 	warning: 'warning',
 	error: 'error',
 	ghost: 'ghost',
