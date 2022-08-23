@@ -23,6 +23,9 @@ module.exports = {
 		},
 	],
 	svelteOptions: {
-		preprocess: preprocess(),
+		preprocess: preprocess({
+			postcss: true,
+			typescript: true,
+		}),
 	},
 };

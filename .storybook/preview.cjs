@@ -12,11 +12,6 @@ export const parameters = {
 };
 addParameters({
 	viewMode: 'docs',
-	// docs: {
-	// 	source: {
-	// 		state: 'open',
-	// 	},
-	// },
 });
 
 export const decorators = [() => Preview];

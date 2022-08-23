@@ -1,4 +1,5 @@
-<script>
+<script lang="ts">
+	import '../src/styles/tailwind.css';
 	import { onMount } from 'svelte';
 	import { DEFAULT_THEME } from './theme/consts';
 

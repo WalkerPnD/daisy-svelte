@@ -1,5 +1,4 @@
-<script>
-	// @ts-check
+<script lang="ts">
 	import { bindClasses } from '../../utils/bind-classes';
 	import { createSwitchClass } from '../..//utils/switch-class';
 	import { createOptionalClass } from '../../utils/optional-class';
