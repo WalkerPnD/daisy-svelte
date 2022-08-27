@@ -1,20 +1,18 @@
 <script lang="ts">
-	import '../src/styles/tailwind.css';
-	import { onMount } from 'svelte';
-	import { DEFAULT_THEME } from './theme/consts';
+  import '../src/styles/tailwind.css';
+  import { onMount } from 'svelte';
+  import { DEFAULT_THEME } from './theme/consts';
 
-	let theme = DEFAULT_THEME;
-	onMount(() => {
-		applyTheme();
-	});
+  let theme = DEFAULT_THEME;
+  onMount(() => {
+    applyTheme();
+  });
 
-	function applyTheme() {
-		document
-			.getElementsByTagName('html')[0]
-			.setAttribute('data-theme', theme);
-	}
+  function applyTheme() {
+    document.getElementsByTagName('html')[0].setAttribute('data-theme', theme);
+  }
 </script>
 
 <div data-theme={theme}>
-	<slot />
+  <slot />
 </div>

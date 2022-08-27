@@ -10,11 +10,7 @@ Currently only support using with CDN version.
 Sveltekit: Add those tags below to your `app.html`
 
 ```html
-<link
-	href="https://cdn.jsdelivr.net/npm/daisyui@2.18.1/dist/full.css"
-	rel="stylesheet"
-	type="text/css"
-/>
+<link href="https://cdn.jsdelivr.net/npm/daisyui@2.18.1/dist/full.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 ```
@@ -45,64 +41,64 @@ npm i daisy-svelte
 
 Actions
 
--   [x] Button
--   [/] Dropdown
--   [/] Modal
--   [ ] Swap
+- [x] Button
+- [/] Dropdown
+- [/] Modal
+- [ ] Swap
 
 Datas display
 
--   [ ] Alert
--   [/] Avatar
--   [ ] Badge
--   [x] Card
--   [ ] Carousel
--   [ ] Collapse
--   [ ] Countdown
--   [ ] Kbd
--   [ ] Progress
--   [ ] Radial progres
--   [ ] Stat
--   [ ] Table
--   [ ] Tooltip
+- [ ] Alert
+- [/] Avatar
+- [ ] Badge
+- [x] Card
+- [ ] Carousel
+- [ ] Collapse
+- [ ] Countdown
+- [ ] Kbd
+- [ ] Progress
+- [ ] Radial progres
+- [ ] Stat
+- [ ] Table
+- [ ] Tooltip
 
 Data input
 
--   [ ] Checkbox
--   [ ] Text input
--   [ ] Radio
--   [ ] Range
--   [ ] Rating
--   [ ] Select
--   [ ] Textarea
--   [ ] Toggle
+- [ ] Checkbox
+- [\] Text input
+- [ ] Radio
+- [ ] Range
+- [ ] Rating
+- [ ] Select
+- [ ] Textarea
+- [ ] Toggle
 
 Layout
 
--   [ ] Artboard
--   [ ] Button group
--   [ ] Divider
--   [ ] Drawer
--   [x] Hero
--   [ ] Indicator
--   [ ] Input group
--   [ ] Mask
--   [ ] Stack
+- [ ] Artboard
+- [ ] Button group
+- [ ] Divider
+- [ ] Drawer
+- [x] Hero
+- [ ] Indicator
+- [ ] Input group
+- [ ] Mask
+- [ ] Stack
 
 Navigation
 
--   [/] Breadcrumbs
--   [ ] Bottom navigation
--   [x] Link
--   [ ] Menu
--   [x] Navbar
--   [ ] Indicator
--   [ ] Pagination
--   [ ] Steps
--   [ ] Tab
+- [/] Breadcrumbs
+- [ ] Bottom navigation
+- [x] Link
+- [ ] Menu
+- [x] Navbar
+- [ ] Indicator
+- [ ] Pagination
+- [ ] Steps
+- [ ] Tab
 
 Mockup
 
--   [ ] Code
--   [ ] Phone
--   [ ] Window
+- [ ] Code
+- [ ] Phone
+- [ ] Window
